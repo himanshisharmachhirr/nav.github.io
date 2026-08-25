@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Himanshi Cars - Car Showroom</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            🚗 Himanshi Cars
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <div class="car-icon">🚘</div>
+
+        <h1>Find Your Dream Car</h1>
+
+        <p>
+            Discover stylish, comfortable and reliable cars
+            at Himanshi Cars.
+        </p>
+
+        <a href="#cars" class="hero-btn">
+            Explore Cars
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CARS SECTION -->
+<section id="cars" class="cars-section">
+
+    <h2>Featured Cars</h2>
+
+    <p class="subtitle">
+        Choose your favourite car and contact us for details.
+    </p>
+
+
+    <div class="car-container">
+
+
+        <!-- CAR 1 -->
+        <div class="car-card">
+
+            <div class="car-image car-one">
+                🚗
+            </div>
+
+            <div class="car-content">
+
+                <h3>Premium Sedan</h3>
+
+                <p>
+                    Comfortable sedan with stylish design
+                    and modern features.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <h4>₹8,99,000</h4>
+
+                <button onclick="buyCar('Premium Sedan')">
+                    Enquire Now
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CAR 2 -->
+        <div class="car-card">
+
+            <div class="car-image car-two">
+                🚙
+            </div>
+
+            <div class="car-content">
+
+                <h3>Family SUV</h3>
+
+                <p>
+                    Spacious SUV designed for comfortable
+                    family journeys.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <h4>₹12,49,000</h4>
+
+                <button onclick="buyCar('Family SUV')">
+                    Enquire Now
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CAR 3 -->
+        <div class="car-card">
+
+            <div class="car-image car-three">
+                🏎️
+            </div>
+
+            <div class="car-content">
+
+                <h3>Sports Car</h3>
+
+                <p>
+                    Sporty design and exciting performance
+                    for driving enthusiasts.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <h4>₹18,99,000</h4>
+
+                <button onclick="buyCar('Sports Car')">
+                    Enquire Now
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CAR 4 -->
+        <div class="car-card">
+
+            <div class="car-image car-four">
+                🚘
+            </div>
+
+            <div class="car-content">
+
+                <h3>Luxury Car</h3>
+
+                <p>
+                    Premium interior, elegant styling and
+                    advanced comfort features.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <h4>₹25,99,000</h4>
+
+                <button onclick="buyCar('Luxury Car')">
+                    Enquire Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- VIDEO SECTION -->
+<section id="video" class="video-section">
+
+    <h2>Watch Our Car Video</h2>
+
+    <p>
+        Take a look at our car collection.
+    </p>
+
+    <div class="video-container">
+
+        <video controls poster="car-poster.jpg">
+
+            <source
+                src="car-video.mp4"
+                type="video/mp4">
+
+            Your browser does not support video playback.
+
+        </video>
+
+    </div>
+
+    <p class="video-note">
+        Upload your car video as
+        <strong>car-video.mp4</strong>
+        in the same folder as this website.
+    </p>
+
+</section>
+
+
+<!-- SERVICES -->
+<section class="services">
+
+    <h2>Why Choose Himanshi Cars?</h2>
+
+    <div class="service-container">
+
+
+        <div class="service-card">
+
+            <span>🚗</span>
+
+            <h3>Quality Cars</h3>
+
+            <p>
+                Explore a selection of attractive
+                and comfortable cars.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <span>💰</span>
+
+            <h3>Great Deals</h3>
+
+            <p>
+                Contact us for current prices
+                and available offers.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <span>🔧</span>
+
+            <h3>Vehicle Assistance</h3>
+
+            <p>
+                Get help with vehicle information
+                and enquiries.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <span>📞</span>
+
+            <h3>Easy Contact</h3>
+
+            <p>
+                Contact us directly for your
+                car requirements.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section">
+
+    <div class="about-card">
+
+        <div class="about-icon">
+            🚗
+        </div>
+
+        <h2>About Himanshi Cars</h2>
+
+        <p>
+            Welcome to Himanshi Cars, your destination
+            for finding cars for different needs and
+            lifestyles.
+        </p>
+
+        <p>
+            Our business was established in
+            <strong>1992</strong>.
+        </p>
+
+        <p>
+            We aim to provide customers with helpful
+            information about cars and make the enquiry
+            process simple.
+        </p>
+
+    </div>
+
+
+    <
