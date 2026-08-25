@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #17202a;
+    line-height: 1.6;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    background: #111827;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f8fafc;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f59e0b;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.78),
+            rgba(15, 23, 42, 0.78)
+        ),
+        linear-gradient(
+            135deg,
+            #334155,
+            #b45309
+        );
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.car-icon {
+    font-size: 100px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 21px;
+    color: #e2e8f0;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #f59e0b;
+    color: #111827;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    background: white;
+}
+
+
+/* CARS */
+
+.cars-section {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.cars-section h2,
+.video-section h2,
+.services h2,
+.contact-section h2 {
+    font-size: 38px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.car-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.car-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+}
+
+.car-image {
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.car-one {
+    background: linear-gradient(135deg, #dbeafe, #93c5fd);
+}
+
+.car-two {
+    background: linear-gradient(135deg, #dcfce7, #86efac);
+}
+
+.car-three {
+    background: linear-gradient(135deg, #fee2e2, #fca5a5);
+}
+
+.car-four {
+    background: linear-gradient(135deg, #e5e7eb, #9ca3af);
+}
+
+.car-content {
+    padding: 25px;
+}
+
+.car-content h3 {
+    color: #111827;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.car-content p {
+    color: #64748b;
+    min-height: 75px;
+}
+
+.rating {
+    margin: 15px 0;
+}
+
+.car-content h4 {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #b45309;
+}
+
+
+/* BUTTON */
+
+button {
+    border: none;
+    background: #111827;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #b45309;
+}
+
+
+/* VIDEO */
+
+.video-section {
+    padding: 80px 7%;
+    text-align: center;
+    background: #111827;
+    color: white;
+}
+
+.video-section h2 {
+    color: #f59e0b;
+}
+
+.video-section > p {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.video-container {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+}
+
+.video-note {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+
+/* SERVICES */
+
+.services {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.service-card span {
+    font-size: 45px;
+}
+
+.service-card h3 {
+    margin: 12px 0;
+}
+
+.service-card p {
+    color: #64748b;
+}
+
+
+/* ABOUT */
+
+.about-section {
+    padding: 80px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background: #e5e7eb;
+}
+
+.about-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.about-icon {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.about-card h2 {
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    margin-bottom: 17px;
+    color: #475569;
+}
+
+.info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.info > span {
+    font-size: 30px;
+}
+
+.info strong {
+    color: #111827;
+}
+
+.info p {
+    margin: 3px 0;
+}
+
+.info a {
+    color: #b45309;
+    font-weight: bold;
+}
+
+
+/* CONTACT */
+
+.contact-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-section > p {
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.contact-section form {
+    max-width: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    background: white;
+    color: #17202a;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #b45309;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #111827;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 1000px) {
+
+    .car-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .car-icon {
+        font-size: 75px;
+    }
+
+    .car-container,
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cars-section h2,
+    .video-section h2,
+    .services h2,
+    .contact-section h2 {
+        font-size: 30px;
+    }
+}
